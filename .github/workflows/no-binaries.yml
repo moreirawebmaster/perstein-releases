@@ -1,0 +1,48 @@
+name: no binaries in git
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tree:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject product binaries
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -E '\.(dmg|zip|exe|pkg|msi|deb|rpm|tar\.gz|sig|sha256)$'; then
+            echo "binário ou checksum versionado neste git" >&2
+            exit 1
+          fi
+          python3 - <<'PY'
+          import json, pathlib, sys
+          root = pathlib.Path("changelog")
+          kinds = {"feat", "fix", "security"}
+          locales = ("pt-BR", "en", "es", "fr")
+          products = {"desktop", "cli", "bundle"}
+          seen = {p: [] for p in products}
+          for path in root.glob("*/*.json"):
+              doc = json.loads(path.read_text())
+              product, version = path.parts[1], path.stem
+              if doc.get("product") != product or doc.get("version") != version:
+                  sys.exit(f"{path}: product/version não batem com o caminho")
+              if product not in products:
+                  sys.exit(f"{path}: produto fora da lista")
+              notes = doc.get("notes") or {}
+              for locale in locales:
+                  entries = notes.get(locale) or []
+                  if not entries:
+                      sys.exit(f"{path}: locale {locale} vazio")
+                  for entry in entries:
+                      if entry.get("kind") not in kinds or not str(entry.get("text") or "").strip():
+                          sys.exit(f"{path}: entrada inválida em {locale}")
+              seen[product].append(version)
+          index = json.loads(pathlib.Path("index.json").read_text())
+          for product, versions in seen.items():
+              listed = index["products"][product]["changelogVersions"]
+              if sorted(listed) != sorted(versions):
+                  sys.exit(f"index.json divergiu de changelog/{product}")
+          print("changelog ok", {k: len(v) for k, v in seen.items()})
+          PY

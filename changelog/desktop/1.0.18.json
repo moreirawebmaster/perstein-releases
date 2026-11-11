@@ -1,0 +1,31 @@
+{
+  "product": "desktop",
+  "version": "1.0.18",
+  "publishedAt": "2026-11-11T00:00:00Z",
+  "notes": {
+    "pt-BR": [
+      {
+        "kind": "feat",
+        "text": "Baseline do catálogo. O Desktop 1.0.18 é a versão instalada de referência. Esta entrada descreve o contrato do changelog e não publica binário."
+      }
+    ],
+    "en": [
+      {
+        "kind": "feat",
+        "text": "Catalog baseline. Desktop 1.0.18 is the installed reference version. This entry describes the changelog contract and publishes no binary."
+      }
+    ],
+    "es": [
+      {
+        "kind": "feat",
+        "text": "Línea base del catálogo. Desktop 1.0.18 es la versión instalada de referencia. Esta entrada describe el contrato del changelog y no publica binario."
+      }
+    ],
+    "fr": [
+      {
+        "kind": "feat",
+        "text": "Base du catalogue. Desktop 1.0.18 est la version installée de référence. Cette entrée décrit le contrat du changelog et ne publie aucun binaire."
+      }
+    ]
+  }
+}

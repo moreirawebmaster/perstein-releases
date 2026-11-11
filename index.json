@@ -1,0 +1,13 @@
+{
+  "products": {
+    "desktop": {
+      "changelogVersions": ["1.0.18"]
+    },
+    "cli": {
+      "changelogVersions": []
+    },
+    "bundle": {
+      "changelogVersions": []
+    }
+  }
+}
