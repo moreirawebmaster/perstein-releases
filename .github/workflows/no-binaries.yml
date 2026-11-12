@@ -4,20 +4,24 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   tree:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Reject product binaries
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Reject product binaries in every commit
+        run: python3 hooks/check_tree.py --all
+      - name: Changelog matches the index
         run: |
-          set -euo pipefail
-          if git ls-files | grep -E '\.(dmg|zip|exe|pkg|msi|deb|rpm|tar\.gz|sig|sha256)$'; then
-            echo "binário ou checksum versionado neste git" >&2
-            exit 1
-          fi
           python3 - <<'PY'
-          import json, pathlib, sys
+          import json, pathlib, re, sys
+          semver = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+$")
           root = pathlib.Path("changelog")
           kinds = {"feat", "fix", "security"}
           locales = ("pt-BR", "en", "es", "fr")
@@ -26,11 +30,14 @@ jobs:
           for path in root.glob("*/*.json"):
               doc = json.loads(path.read_text())
               product, version = path.parts[1], path.stem
+              if not semver.match(version):
+                  sys.exit(f"{path}: versão fora do semver")
               if doc.get("product") != product or doc.get("version") != version:
                   sys.exit(f"{path}: product/version não batem com o caminho")
               if product not in products:
                   sys.exit(f"{path}: produto fora da lista")
               notes = doc.get("notes") or {}
+              counts = []
               for locale in locales:
                   entries = notes.get(locale) or []
                   if not entries:
@@ -38,6 +45,9 @@ jobs:
                   for entry in entries:
                       if entry.get("kind") not in kinds or not str(entry.get("text") or "").strip():
                           sys.exit(f"{path}: entrada inválida em {locale}")
+                  counts.append(len(entries))
+              if len(set(counts)) != 1:
+                  sys.exit(f"{path}: os quatro idiomas não têm a mesma quantidade de notas")
               seen[product].append(version)
           index = json.loads(pathlib.Path("index.json").read_text())
           for product, versions in seen.items():

@@ -48,8 +48,23 @@ perstein-<produto>_<versão>_<os>_<arch>.<ext>.sig
 | cli | `.tar.gz` | `.zip` | `.tar.gz` |
 | bundle | `.pkg` | `.msi` | `.deb` e `.rpm` |
 
-Linux do bundle tem dois assets no mesmo `os/arch`, distinguidos pela
-extensão. Os outros pares produto/`os`/`arch` têm um asset.
+Linux do bundle publica `.deb` e `.rpm` no mesmo `os/arch`. A instalação
+usa `.deb`. `.rpm` só entra quando o pedido traz `format=rpm`. Os outros
+pares produto/`os`/`arch` têm um asset.
+
+## Antes do push
+
+O GitHub recusa branch protection neste repositório privado (HTTP 403, plano
+sem a função). O job de Actions enxerga o commit depois que ele já está no
+remoto, então não é a trava. A trava é o hook local, que recusa o push:
+
+```text
+git config core.hooksPath hooks
+```
+
+O hook e o job usam `hooks/check_tree.py`. Ele recusa extensão de binário em
+qualquer capitalização, arquivo sem extensão com conteúdo binário, e varre
+todos os commits, não só a ponta.
 
 Release sem os quatro idiomas do changelog, sem `.sha256` ou sem `.sig` de
 cada asset não é publicada. O corpo da release é renderizado do JSON. O JSON
