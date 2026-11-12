@@ -22,6 +22,11 @@ e sem revisão de build. O arquivo entra no mesmo commit da tag
 `security`. Os quatro idiomas são obrigatórios e cada um tem ao menos uma
 entrada. Texto vazio não conta.
 
+`artifacts` lista o que a release pode oferecer. Cada item tem `os`, `arch`,
+`name`, `sha256` e `signature`. O `name` é o asset na GitHub Release. O
+arquivo em si não entra neste git. Sem esse item, a versão não é update nem
+install.
+
 `changelog/desktop/1.0.18.json` é o espécime do contrato para a versão
 instalada do Desktop. Não há asset `desktop-v1.0.18` neste repositório: a
 linha `v6.8.x` do monorepo não é esta versão, e um update só existe quando a
