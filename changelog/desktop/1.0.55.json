@@ -1,0 +1,64 @@
+{
+  "product": "desktop",
+  "version": "1.0.55",
+  "notes": {
+    "pt-BR": [
+      {
+        "kind": "fix",
+        "text": "Correções gerais de estabilidade e refinamentos da release 1.0.54"
+      }
+    ],
+    "en": [
+      {
+        "kind": "fix",
+        "text": "General stability fixes and refinements of the 1.0.54 release"
+      }
+    ],
+    "es": [
+      {
+        "kind": "fix",
+        "text": "Correcciones generales de estabilidad y refinamientos de la release 1.0.54"
+      }
+    ],
+    "fr": [
+      {
+        "kind": "fix",
+        "text": "Corrections générales de stabilité et raffinements de la release 1.0.54"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "perstein-desktop_1.0.55_darwin_amd64.dmg",
+      "os": "darwin",
+      "arch": "amd64",
+      "size": 109642492,
+      "sha256": "f6f9b6726f6087b155088a4e3d02a0871c5eb4b45ad6300f75185af63037b21e",
+      "signature": "MEYCIQD9U6QAlFIWRGBAVOPksS/KsBhVyFnc3i/egMVnfPqj0QIhAKFkOgj1jIrc3AuUyPM0sP7rNfB8EHDxZ9wLppL/NZg7"
+    },
+    {
+      "name": "perstein-desktop_1.0.55_darwin_arm64.dmg",
+      "os": "darwin",
+      "arch": "arm64",
+      "size": 109642492,
+      "sha256": "f6f9b6726f6087b155088a4e3d02a0871c5eb4b45ad6300f75185af63037b21e",
+      "signature": "MEUCIEqY4kGU9bKWRHhDzIQRCt5lE9sMO/F61JQV31ok5o0gAiEAgTssMp4L3hIn25M+Is+gLBaObxgHtXGK41YGN+nhJas="
+    },
+    {
+      "name": "perstein-desktop_1.0.55_linux_amd64.tar.gz",
+      "os": "linux",
+      "arch": "amd64",
+      "size": 48568487,
+      "sha256": "627ec2ccf2514757f1b5be0abb6a51fa30eba66b3a0e52fcc6aff348e3e3cf14",
+      "signature": "MEUCIQDmsQSDWVgiyW7TVHbym9ciW1YREXtNxlcbWNshxpqxgQIgQqspqEtqdzOsPv01IMcWqMMjqH4u7gWgd7k8WERb6KI="
+    },
+    {
+      "name": "perstein-desktop_1.0.55_windows_amd64.msi",
+      "os": "windows",
+      "arch": "amd64",
+      "size": 37990400,
+      "sha256": "f6dc85fc6d57cc20bd08c41a1959e3191feadc49f2cfedd5c5f1ce833aa908df",
+      "signature": "MEQCIGKJiMCy9juPoltjwOOZ/lHRjKYtfal+Y2SC/ka5P/U+AiAyntA8Av4oYd4bdgGvVWhbWR6qFvCqG+dgef3ENVLhEA=="
+    }
+  ]
+}
