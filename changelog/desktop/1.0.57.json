@@ -1,0 +1,64 @@
+{
+  "product": "desktop",
+  "version": "1.0.57",
+  "notes": {
+    "pt-BR": [
+      {
+        "kind": "fix",
+        "text": "Atualização automática de ponta a ponta: catálogo autenticado, download verificado e instalação sem fricção"
+      }
+    ],
+    "en": [
+      {
+        "kind": "fix",
+        "text": "End-to-end automatic update: authenticated catalog, verified download and frictionless install"
+      }
+    ],
+    "es": [
+      {
+        "kind": "fix",
+        "text": "Actualización automática de punta a punta: catálogo autenticado, descarga verificada e instalación sin fricción"
+      }
+    ],
+    "fr": [
+      {
+        "kind": "fix",
+        "text": "Mise à jour automatique de bout en bout : catalogue authentifié, téléchargement vérifié et installation sans friction"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "perstein-desktop_1.0.57_darwin_amd64.dmg",
+      "os": "darwin",
+      "arch": "amd64",
+      "size": 109638728,
+      "sha256": "3629ed40ad213eead15b8832906f4ba96c556286baabe793723f350ab278a1ff",
+      "signature": "MEUCIQCv/q/fckoSct4mGHfNMDw1UShDUmzApqjufrwa8I9n4AIgZyIaE5mc5wGktSXc9n4I0Ov0jgACCvOCVnDOy8a3qdg="
+    },
+    {
+      "name": "perstein-desktop_1.0.57_darwin_arm64.dmg",
+      "os": "darwin",
+      "arch": "arm64",
+      "size": 109638728,
+      "sha256": "3629ed40ad213eead15b8832906f4ba96c556286baabe793723f350ab278a1ff",
+      "signature": "MEUCICW8T+9Djc0JhfBfHGCBzo7CyLyAJtm6ut6XtMKkA/7kAiEA3w0yifxc1TbMYidU1XgDQhnT8OwPa9JiXpR5zdLMqkQ="
+    },
+    {
+      "name": "perstein-desktop_1.0.57_linux_amd64.tar.gz",
+      "os": "linux",
+      "arch": "amd64",
+      "size": 48568976,
+      "sha256": "56a95717775cfff09dfd62d5078ae91cbd546c3b665b17e6185be6f41b97e8e2",
+      "signature": "MEUCIAu8/1zNJD0/AR2IMZTHCiPgoR5+G1teKd0R60FIa5A6AiEAy/uklApoDYejDDe8ti3Ugt19evFH46+RGTrkDSNYdaw="
+    },
+    {
+      "name": "perstein-desktop_1.0.57_windows_amd64.msi",
+      "os": "windows",
+      "arch": "amd64",
+      "size": 37982208,
+      "sha256": "bbcb859c8c85ce84e4cf5effccb00f96ff5efd00ab4e9fec4000807167a82fbf",
+      "signature": "MEYCIQDrkCxkVTpUCi+FbKPfPt+FSJ4t0WwgpoWEUpyVAM+/fQIhAKvMQrmzx86QeqZF+W+nWh955qRLedeKOXJuRT/UVeFP"
+    }
+  ]
+}
