@@ -1,0 +1,96 @@
+{
+  "product": "desktop",
+  "version": "1.0.54",
+  "notes": {
+    "pt-BR": [
+      {
+        "kind": "feat",
+        "text": "Orbit Browser integrado ao Desktop com navegação nativa e preview da sessão do agente"
+      },
+      {
+        "kind": "security",
+        "text": "Sessão do Desktop validada de ponta a ponta contra o Cloud antes de liberar a home"
+      },
+      {
+        "kind": "fix",
+        "text": "Sinalização visual e menus de sistema estabilizados após a corrida de versões"
+      }
+    ],
+    "en": [
+      {
+        "kind": "feat",
+        "text": "Orbit Browser integrated into the Desktop with native navigation and agent session preview"
+      },
+      {
+        "kind": "security",
+        "text": "Desktop session validated end to end against the Cloud before unlocking the home"
+      },
+      {
+        "kind": "fix",
+        "text": "Visual signaling and system menus stabilized after the version race"
+      }
+    ],
+    "es": [
+      {
+        "kind": "feat",
+        "text": "Orbit Browser integrado al Desktop con navegación nativa y preview de la sesión del agente"
+      },
+      {
+        "kind": "security",
+        "text": "La sesión del Desktop se valida de punta a punta contra el Cloud antes de liberar la home"
+      },
+      {
+        "kind": "fix",
+        "text": "Señalización visual y menús de sistema estabilizados tras la carrera de versiones"
+      }
+    ],
+    "fr": [
+      {
+        "kind": "feat",
+        "text": "Orbit Browser intégré au Desktop avec navigation native et aperçu de la session de l'agent"
+      },
+      {
+        "kind": "security",
+        "text": "La session Desktop est validée de bout en bout contre le Cloud avant de débloquer l'accueil"
+      },
+      {
+        "kind": "fix",
+        "text": "Signalisation visuelle et menus système stabilisés après la course aux versions"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "perstein-desktop_1.0.54_darwin_amd64.dmg",
+      "os": "darwin",
+      "arch": "amd64",
+      "size": 109642495,
+      "sha256": "95364bc58bafb59d0ae5420b74cc4a3ef15417ddbe10fd25df685ff28a5dac49",
+      "signature": "MEQCIC8o0TVmtdBR8S58gfyC3HBIHv0zz6vyvfZXtWS7MoRrAiBRZBPFmoVEKGQaH7t+E0E76t4+QFIM8U+c6j6I8o9cUw=="
+    },
+    {
+      "name": "perstein-desktop_1.0.54_darwin_arm64.dmg",
+      "os": "darwin",
+      "arch": "arm64",
+      "size": 109642495,
+      "sha256": "95364bc58bafb59d0ae5420b74cc4a3ef15417ddbe10fd25df685ff28a5dac49",
+      "signature": "MEUCIQD5hahiwl2RJj252kLSsFOFu2fQMA25yQz7VAbtIiGMTAIgFQKHN7Ce7Z1z2Q/SMQJgnb3WjP+5lLti1UThh6ZXOd4="
+    },
+    {
+      "name": "perstein-desktop_1.0.54_linux_amd64.tar.gz",
+      "os": "linux",
+      "arch": "amd64",
+      "size": 48568486,
+      "sha256": "7afb23e3abcc5361938682b8253e045d4ba21baa58817e06cef5a814d5ec039e",
+      "signature": "MEYCIQDtD6D4syze//Q7XhLY/YRiC4M5FZIjZdPNdXx9oAGOfwIhALcas19v7OboqB7J26wGx2JInedxybboplfUX35ni2YQ"
+    },
+    {
+      "name": "perstein-desktop_1.0.54_windows_amd64.msi",
+      "os": "windows",
+      "arch": "amd64",
+      "size": 37990400,
+      "sha256": "bcdacab381f3ae6d690b34028bc8b1c85789782c0b903bafcd2217946020f215",
+      "signature": "MEUCIQCs2WSRvhhhho3lmd3rgE/IHdkFpOzY8IZLg3392EY+lQIgSOp7TKnHuX38/2+6BN61gJ3zN4PvsSvFj0qAeW7r3JQ="
+    }
+  ]
+}
