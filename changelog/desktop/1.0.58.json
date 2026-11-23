@@ -1,0 +1,112 @@
+{
+  "product": "desktop",
+  "version": "1.0.58",
+  "notes": {
+    "pt-BR": [
+      {
+        "kind": "feat",
+        "text": "Habitat: reuniões com janela e recibo de voz, e criação de sala pelo dono"
+      },
+      {
+        "kind": "feat",
+        "text": "Workflows: lista dos runs concluídos da sessão e orientação de correção nos erros de gate"
+      },
+      {
+        "kind": "feat",
+        "text": "Memória, Agentes e Comandos agora em português, inglês, espanhol e francês"
+      },
+      {
+        "kind": "fix",
+        "text": "Barra de menus do macOS: o item de status não trava mais com instâncias concorrentes"
+      }
+    ],
+    "en": [
+      {
+        "kind": "feat",
+        "text": "Habitat: meetings with a voice window and receipt, and owner-created rooms"
+      },
+      {
+        "kind": "feat",
+        "text": "Workflows: list of finished runs for the session and fix guidance on gate errors"
+      },
+      {
+        "kind": "feat",
+        "text": "Memory, Agents and Commands now in Portuguese, English, Spanish and French"
+      },
+      {
+        "kind": "fix",
+        "text": "macOS menu bar: the status item no longer hangs with concurrent instances"
+      }
+    ],
+    "es": [
+      {
+        "kind": "feat",
+        "text": "Habitat: reuniones con ventana de voz y recibo, y salas creadas por el dueño"
+      },
+      {
+        "kind": "feat",
+        "text": "Workflows: lista de ejecuciones terminadas de la sesión y orientación para corregir errores de gate"
+      },
+      {
+        "kind": "feat",
+        "text": "Memoria, Agentes y Comandos ahora en portugués, inglés, español y francés"
+      },
+      {
+        "kind": "fix",
+        "text": "Barra de menú de macOS: el ítem de estado ya no se cuelga con instancias concurrentes"
+      }
+    ],
+    "fr": [
+      {
+        "kind": "feat",
+        "text": "Habitat : réunions avec fenêtre vocale et reçu, et salles créées par le propriétaire"
+      },
+      {
+        "kind": "feat",
+        "text": "Workflows : liste des exécutions terminées de la session et conseils de correction pour les erreurs de gate"
+      },
+      {
+        "kind": "feat",
+        "text": "Mémoire, Agents et Commandes désormais en portugais, anglais, espagnol et français"
+      },
+      {
+        "kind": "fix",
+        "text": "Barre de menus macOS : l'élément de statut ne se bloque plus avec des instances simultanées"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "perstein-desktop_1.0.58_darwin_amd64.dmg",
+      "os": "darwin",
+      "arch": "amd64",
+      "size": 110236677,
+      "sha256": "49766b1d8324e56619d6b7fb9524bb0944bcd7f3875609a5ff18043911403d88",
+      "signature": "MEUCIQC+ytAgtU/ek8fECe+MI4PVOcFL5r3eINuBRPKRRgA5UgIgcTnGPx2ktPn0RAGIKTVm9ovt9EAp1oXloDnsK9xCTn4="
+    },
+    {
+      "name": "perstein-desktop_1.0.58_darwin_arm64.dmg",
+      "os": "darwin",
+      "arch": "arm64",
+      "size": 110236677,
+      "sha256": "49766b1d8324e56619d6b7fb9524bb0944bcd7f3875609a5ff18043911403d88",
+      "signature": "MEYCIQC5OnfLjfxTCZ7D9UaqN0clvUfK/58ma/hz5jkTcTNBIAIhANI84YPE7c2h7PU+2IJAhKNbueqTXPbeZIEP6P/usN3C"
+    },
+    {
+      "name": "perstein-desktop_1.0.58_linux_amd64.tar.gz",
+      "os": "linux",
+      "arch": "amd64",
+      "size": 48864245,
+      "sha256": "17a9e14297e3e5c247694e894a25c0dff720c55bbaca91fddb59c19059536d5e",
+      "signature": "MEQCIAjuOZX1U3kYlTFaWERDZupnRKBBnOhHtoPbHUvGqiNDAiASCVERZYgncmShE7BPXr2H1w5MkMtFoA2JPqedQYkfQw=="
+    },
+    {
+      "name": "perstein-desktop_1.0.58_windows_amd64.msi",
+      "os": "windows",
+      "arch": "amd64",
+      "size": 38223872,
+      "sha256": "6c6f569f39e4fab2d248e9339fc9cda1e295c336ab21511ccc8f4d783495d910",
+      "signature": "MEQCIHI0qenjaR6zDNyIa3H992NsPTFZusXsqJNj1WxqUIFSAiBoeKhMzPkIAZQ/95nwtwkoTx0f/62G0hqqIeuGdfVToQ=="
+    }
+  ]
+}
