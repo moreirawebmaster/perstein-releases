@@ -1,7 +1,10 @@
 {
   "products": {
     "desktop": {
-      "changelogVersions": ["1.0.18"]
+      "changelogVersions": [
+        "1.0.18",
+        "1.0.58"
+      ]
     },
     "cli": {
       "changelogVersions": []
